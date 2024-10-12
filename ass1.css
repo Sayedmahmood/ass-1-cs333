@@ -1,0 +1,170 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8fb;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #FFDE59; /* Bright yellow */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #FF6347; /* Tomato red */
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #FF6347; /* Tomato red */
+    letter-spacing: 2px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #FF6347;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add hover effect */
+  }
+  
+  /* Main Content */
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Welcome Section */
+  #welcome {
+    background-color: #FFEBB7; /* Soft yellow background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #welcome h2 {
+    font-size: 2.5rem;
+    color: #FF6347;
+  }
+  
+  #welcome p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  /* Weekly Schedule Table */
+  #schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  thead {
+    background-color: #FFD700; /* Bright yellow */
+  }
+  
+  thead th {
+    padding: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #FFEBB7; /* Soft yellow */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #FFF5CC; /* Lighter yellow */
+  }
+  
+  table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    font-weight: bold;
+  }
+  
+  /* Photo Gallery */
+  #gallery {
+    background-color: #FFDAB9; /* Light peach background */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  #gallery h2 {
+    font-size: 2.2rem;
+    color: #FF6347;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhance shadow */
+  }
+  
+  /* Parent Resources Section */
+  #resources {
+    margin-bottom: 40px;
+  }
+  
+  #resources h2 {
+    font-size: 2.2rem;
+    color: #4682B4; /* Soft blue */
+  }
+  
+  #resources p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top
+  }
