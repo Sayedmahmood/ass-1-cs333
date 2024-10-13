@@ -86,3 +86,92 @@ th {
 tr:nth-child(even) {
     background-color: #f0f8ff; /* Light blue for even rows */
 }
+
+/* Photo Gallery */
+/* Centering the gallery items */
+.gallery {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+}
+
+.gallery-item {
+    position: relative; /* For tooltip positioning */
+    display: flex; /* Center the tooltip */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+}
+
+/* Ensure images are responsive */
+.gallery img {
+    width: 100%;
+    max-width: 150px; /* Limit maximum width of images */
+    border-radius: 10px;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Tooltip styling */
+.tooltip {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 10; /* Ensure it appears over other elements */
+    transition: opacity 0.2s;
+}
+
+.gallery-item:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+}
+/* Modal for enlarged images */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal img {
+    margin: auto;
+    display: block;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 700px; /* Limit max width */
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #00827c; /* Purple footer */
+    margin-top: 20px;
+    color: #ffffff; /* White text for footer */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
