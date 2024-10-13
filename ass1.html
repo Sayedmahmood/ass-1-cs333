@@ -1,24 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunshine Kindergarten</title>
-  <link rel="stylesheet" href="ass1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Kindergarten</title>
+    <link rel="stylesheet" href="ass1.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>Sunshine Kindergarten</h1>
-    <nav>
-      <ul>
-        <li><a href="#welcome">Home</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#resources">Parent Resources</a></li>
-        <li><a href="#teacher">Meet the Teacher</a></li>
-      </ul>
-    </nav>
-  </header>
+<!--Header-->
+    <header>
+        <h1>Sunshine Kindergarten</h1>
+    </header>
 
- 
+<!--Navigation-->
+    <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#schedule">Weekly Schedule</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#resources">Parent Resources</a>
+        <a href="#teacher">Meet the Teacher</a>
+    </nav>
+
+<!--Main-->
+    <main>
+        <!-- Welcome Message -->
+        <section id="welcome">
+            <h2>Welcome Message</h2>
+            <p>We are so excited for your kids to join us for an exciting year filled with exploration, learning, and fun!</p>
+        </section>
+
+<!--Weekly Schedule-->
+        <section id="schedule">
+            <h2>Weekly Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>8:00 - 10:00 AM</td>
+                        <td>Developing Art Skills</td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>11:00 - 1:00 PM</td>
+                        <td>Mathematical Knowledge Building Challenge</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>11:00 - 1:00 PM</td>
+                        <td>Entertainment and self-development</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 - 10:00 AM</td>
+                        <td>Develop a sense of innovation</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8:00 - 10:00 AM</td>
+                        <td>Preservation and enhancement of the environment</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+<!--Photo Gallery-->
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/images1.jpg" alt="class activity Artistic">
+            <div class="tooltip">class activity Artistic</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/images2.jpg" alt="Class Activity Math">
+            <div class="tooltip">Class Activity Math</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/download3.jpg" alt="Class Activity Entertainment">
+            <div class="tooltip">Class Activity Entertainment</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/download4.jpg" alt="Class Activity Innovation">
+            <div class="tooltip">Class Activity Innovation</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/images5.jpg" alt="Class Activity Collaboratio">
+            <div class="tooltip">Class Activity Collaboratio</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/download6.jpg" alt="Class Activity Agriculture">
+            <div class="tooltip">Class Activity Agriculture</div>
+        </div>
+    </div>
+</section>
+
+<!--Parent Resources-->
+        <section id="resources">
+            <h2>Parent Resources</h2>
+            <p>Check out our <a href="#">Daily task</a> for announcements!</p>
+        </section>
+
+<!--Teacher Information-->
+        <section id="teacher">
+            <h2>Meet the Teacher</h2>
+            <p>Dr. Subah is happy to lead your kids on this journey of discovery this year!</p>
+        </section>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <p>&copy; 2024 Sunshine Kindergarten. All rights reserved.</p>
+    </footer>
+
+<!-- Modal for enlarged images -->
+<div class="modal" id="myModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+
+</body>
+</html>
