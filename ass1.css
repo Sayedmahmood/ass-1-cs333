@@ -1,0 +1,88 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif; /* Playful font */
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Light blue background for the entire website */
+    background-image: url(images/istockphoto-1408356952-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    color: #00827c; /* Indigo text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #00827c; /* Purple header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+h1 {
+    color: #ffffff; /* White text for header */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #00827c; /* Purple navigation */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff; /* White text for links */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Added transform for effect */
+}
+nav a:hover {
+    color: #FFD700; /* Gold hover effect */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+section {
+    background: #ffffff; /* White background for sections */
+    border: 2px solid #00827c; /* Purple border to match the schedule */
+    border-radius: 15px; /* Increased border radius for a softer look */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Weekly Schedule Table */
+#schedule {
+    border: 2px solid #00827c; /* Solid border with purple for the schedule */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding around the schedule */
+}
+#schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #00827c; /* Matching border color for table cells */
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #00827c; /* Purple for headers */
+    color: #ffffff; /* White text for headers */
+}
+tr:nth-child(even) {
+    background-color: #f0f8ff; /* Light blue for even rows */
+}
